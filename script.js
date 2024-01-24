@@ -20,4 +20,10 @@ var checkDead = setInterval(function() {
         counter++;
         document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
     }
+    function speed(){
+        
+        if (document.getElementById("scoreSpan").innerHTML == 10){return}
+        block.style.animation = "block 0.5s infinite linear";
+        
+    }
 }, 10);
